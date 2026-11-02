@@ -91,3 +91,5 @@ xcodebuild -project SVNFinder.xcodeproj -scheme SVNFinder \
 Finder Sync API 不允许扩展检查其他扩展是否已经为当前菜单提供命令，因此
 无法自动判断 SnailSVN 菜单是否存在。可以通过 SVN Finder App 的接管目录
 控制菜单显示范围。
+
+《SnailSVNLite免费版只能管理一个仓库，收费版要¥98，于是vibe coding了这个，gpt花了10美元的token，fuck，我特么还不如直接买！》
