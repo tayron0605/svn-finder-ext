@@ -1,0 +1,73 @@
+name: SVNFinder
+options:
+  bundleIdPrefix: com.tayron
+  deploymentTarget:
+    macOS: "13.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+targets:
+  SVNFinder:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Shared
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleURLTypes:
+          - CFBundleTypeRole: Editor
+            CFBundleURLName: com.tayron.SVNFinder.commands
+            CFBundleURLSchemes:
+              - svn-finder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tayron.SVNFinder
+        PRODUCT_NAME: SVNFinder
+    dependencies:
+      - target: SVNFinderExtension
+        embed: true
+  SVNFinderExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Extension
+      - path: Shared
+    info:
+      path: Extension/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionAttributes: {}
+          NSExtensionPointIdentifier: com.apple.FinderSync
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).FinderSync
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tayron.SVNFinder.Extension
+        PRODUCT_NAME: SVNFinderExtension
+        CODE_SIGN_ENTITLEMENTS: Extension/SVNFinderExtension.entitlements
+        SKIP_INSTALL: true
+  SVNFinderTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tayron.SVNFinder.Tests
+        CODE_SIGNING_ALLOWED: NO
+schemes:
+  SVNFinder:
+    build:
+      targets:
+        SVNFinder: all
+        SVNFinderExtension: all
+    run:
+      config: Debug
+    test:
+      targets:
+        - SVNFinderTests

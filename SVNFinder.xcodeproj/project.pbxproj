@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A1D45A854C248284E8D7D0E /* FinderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13A1749051F25CCFCF2D82 /* FinderConfiguration.swift */; };
+		3385FF308297327BD3F62FEF /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651ED5A60F62F1BA051A2E76 /* AppModel.swift */; };
+		3C35302F07AC20AA2AF94099 /* SVNCommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE3EC1B399BA5DDB8BE97B6 /* SVNCommandTests.swift */; };
+		3FA6D631DF98342615E24DB0 /* SVNFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D16CDBD3602D931C3D6D6 /* SVNFinderApp.swift */; };
+		75F9898A50D57CA4207DFE4D /* FinderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13A1749051F25CCFCF2D82 /* FinderConfiguration.swift */; };
+		7AAE3EDD77737F62E2051956 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF92861E575C661322DB4737 /* FinderSync.swift */; };
+		7DC89C5EA5CFD82ADECC5E2B /* SVNFinderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D9E6572EDEF14992DD378510 /* SVNFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAF200C2AC1BC4223DEE6868 /* FinderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13A1749051F25CCFCF2D82 /* FinderConfiguration.swift */; };
+		BDD91E4B7AF15E4B48C1D8B9 /* SVNCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F7B8D872F1B9133C363BB /* SVNCommand.swift */; };
+		D30B22AC8A44ABA714085D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF2BD2CC54B44B9DC782F0 /* ContentView.swift */; };
+		EEDE7055696F809D81487549 /* SVNCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F7B8D872F1B9133C363BB /* SVNCommand.swift */; };
+		F06A504BAC28816F3932AA02 /* SVNCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F7B8D872F1B9133C363BB /* SVNCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B739D859B6A50D6A6DD5B92C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659270214C61969C83578908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A20612103671B167BC8EF4F;
+			remoteInfo = SVNFinderExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24D8D2873953094F334815CB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7DC89C5EA5CFD82ADECC5E2B /* SVNFinderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		341D21D73C0D843FB8548C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4AF4E62E1BB13DCEF67BC6A9 /* SVNFinderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SVNFinderExtension.entitlements; sourceTree = "<group>"; };
+		4EE3EC1B399BA5DDB8BE97B6 /* SVNCommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVNCommandTests.swift; sourceTree = "<group>"; };
+		651ED5A60F62F1BA051A2E76 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9A5F7B8D872F1B9133C363BB /* SVNCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVNCommand.swift; sourceTree = "<group>"; };
+		BF92861E575C661322DB4737 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		C3BF2BD2CC54B44B9DC782F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5C05805F2DB30AAB9B62AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D9E6572EDEF14992DD378510 /* SVNFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SVNFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9FEE92F44EB7FB4565B7E7 /* SVNFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SVNFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7EE919B2CE0F1B5DB2919F /* SVNFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVNFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB13A1749051F25CCFCF2D82 /* FinderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderConfiguration.swift; sourceTree = "<group>"; };
+		F56D16CDBD3602D931C3D6D6 /* SVNFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVNFinderApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01F4E668E0E0680358C539DA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB13A1749051F25CCFCF2D82 /* FinderConfiguration.swift */,
+				9A5F7B8D872F1B9133C363BB /* SVNCommand.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0A314470E92DA9381F68A7E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE7EE919B2CE0F1B5DB2919F /* SVNFinder.app */,
+				D9E6572EDEF14992DD378510 /* SVNFinderExtension.appex */,
+				DC9FEE92F44EB7FB4565B7E7 /* SVNFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25BE5E3311065CAF013943F4 = {
+			isa = PBXGroup;
+			children = (
+				329A8209EE5B229E443A6663 /* App */,
+				F8E93803CB0DE8071C196962 /* Extension */,
+				01F4E668E0E0680358C539DA /* Shared */,
+				569F40DA8DFF9124AA9758F2 /* Tests */,
+				0A314470E92DA9381F68A7E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		329A8209EE5B229E443A6663 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				651ED5A60F62F1BA051A2E76 /* AppModel.swift */,
+				C3BF2BD2CC54B44B9DC782F0 /* ContentView.swift */,
+				D5C05805F2DB30AAB9B62AD2 /* Info.plist */,
+				F56D16CDBD3602D931C3D6D6 /* SVNFinderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		569F40DA8DFF9124AA9758F2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4EE3EC1B399BA5DDB8BE97B6 /* SVNCommandTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F8E93803CB0DE8071C196962 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF92861E575C661322DB4737 /* FinderSync.swift */,
+				341D21D73C0D843FB8548C74 /* Info.plist */,
+				4AF4E62E1BB13DCEF67BC6A9 /* SVNFinderExtension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A20A2EB94E52EEE582ED7E4 /* SVNFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762A76A39C1DDD6A5415727A /* Build configuration list for PBXNativeTarget "SVNFinderTests" */;
+			buildPhases = (
+				53CC33A5462E8B0ABC3F16E5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVNFinderTests;
+			packageProductDependencies = (
+			);
+			productName = SVNFinderTests;
+			productReference = DC9FEE92F44EB7FB4565B7E7 /* SVNFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A20612103671B167BC8EF4F /* SVNFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D5DFB0E8CE532FB1053E811 /* Build configuration list for PBXNativeTarget "SVNFinderExtension" */;
+			buildPhases = (
+				30B7441149791925A3584190 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVNFinderExtension;
+			packageProductDependencies = (
+			);
+			productName = SVNFinderExtension;
+			productReference = D9E6572EDEF14992DD378510 /* SVNFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		814C884221172624A41A63B2 /* SVNFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACD70A0C86F80C1C0DAC8FA /* Build configuration list for PBXNativeTarget "SVNFinder" */;
+			buildPhases = (
+				8AE711951D665109C53C6225 /* Sources */,
+				24D8D2873953094F334815CB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				232129B50F91875F7F7316F8 /* PBXTargetDependency */,
+			);
+			name = SVNFinder;
+			packageProductDependencies = (
+			);
+			productName = SVNFinder;
+			productReference = DE7EE919B2CE0F1B5DB2919F /* SVNFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659270214C61969C83578908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3A20A2EB94E52EEE582ED7E4 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					4A20612103671B167BC8EF4F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					814C884221172624A41A63B2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8EBB6704C1FF581D3E57F89C /* Build configuration list for PBXProject "SVNFinder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 25BE5E3311065CAF013943F4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0A314470E92DA9381F68A7E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814C884221172624A41A63B2 /* SVNFinder */,
+				4A20612103671B167BC8EF4F /* SVNFinderExtension */,
+				3A20A2EB94E52EEE582ED7E4 /* SVNFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30B7441149791925A3584190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF200C2AC1BC4223DEE6868 /* FinderConfiguration.swift in Sources */,
+				7AAE3EDD77737F62E2051956 /* FinderSync.swift in Sources */,
+				EEDE7055696F809D81487549 /* SVNCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CC33A5462E8B0ABC3F16E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1D45A854C248284E8D7D0E /* FinderConfiguration.swift in Sources */,
+				F06A504BAC28816F3932AA02 /* SVNCommand.swift in Sources */,
+				3C35302F07AC20AA2AF94099 /* SVNCommandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE711951D665109C53C6225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3385FF308297327BD3F62FEF /* AppModel.swift in Sources */,
+				D30B22AC8A44ABA714085D6F /* ContentView.swift in Sources */,
+				75F9898A50D57CA4207DFE4D /* FinderConfiguration.swift in Sources */,
+				BDD91E4B7AF15E4B48C1D8B9 /* SVNCommand.swift in Sources */,
+				3FA6D631DF98342615E24DB0 /* SVNFinderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		232129B50F91875F7F7316F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A20612103671B167BC8EF4F /* SVNFinderExtension */;
+			targetProxy = B739D859B6A50D6A6DD5B92C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10C50F0E1B4E466BE6F99B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/SVNFinderExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder.Extension;
+				PRODUCT_NAME = SVNFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2B1610A0F27D04160F9E8090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder.Tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4352B629413246DBDB3EC22B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder;
+				PRODUCT_NAME = SVNFinder;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A360BB91FC18753212BDF00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder.Tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BBBD7D458AC0078A3555DDC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/SVNFinderExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder.Extension;
+				PRODUCT_NAME = SVNFinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1EC0115324934B1FABFB91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DEFBA799518D08B0516FDA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DF52A6B75B7016ABEEA3259D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayron.SVNFinder;
+				PRODUCT_NAME = SVNFinder;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		762A76A39C1DDD6A5415727A /* Build configuration list for PBXNativeTarget "SVNFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1610A0F27D04160F9E8090 /* Debug */,
+				A360BB91FC18753212BDF00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8EBB6704C1FF581D3E57F89C /* Build configuration list for PBXProject "SVNFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEFBA799518D08B0516FDA38 /* Debug */,
+				D1EC0115324934B1FABFB91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D5DFB0E8CE532FB1053E811 /* Build configuration list for PBXNativeTarget "SVNFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBD7D458AC0078A3555DDC2 /* Debug */,
+				10C50F0E1B4E466BE6F99B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FACD70A0C86F80C1C0DAC8FA /* Build configuration list for PBXNativeTarget "SVNFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF52A6B75B7016ABEEA3259D /* Debug */,
+				4352B629413246DBDB3EC22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659270214C61969C83578908 /* Project object */;
+}
