@@ -64,14 +64,23 @@ final class FinderSync: FIFinderSync {
             keyEquivalent: ""
         )
         item.target = self
-        item.representedObject = operation.rawValue
+        item.tag = SVNOperation.allCases.firstIndex(of: operation) ?? -1
         menu.addItem(item)
     }
 
     @objc private func runCommand(_ sender: NSMenuItem) {
         guard
-            let rawValue = sender.representedObject as? String,
-            let operation = SVNOperation(rawValue: rawValue),
+            SVNOperation.allCases.indices.contains(sender.tag),
+            !selectedURLs.isEmpty
+        else {
+            logger.error(
+                "Could not resolve command tag \(sender.tag, privacy: .public)"
+            )
+            return
+        }
+
+        let operation = SVNOperation.allCases[sender.tag]
+        guard
             let url = SVNCommandRequest(
                 operation: operation,
                 paths: selectedURLs.map(\.path)
